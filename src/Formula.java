@@ -37,7 +37,7 @@ interface Converter <Formula,Formula2> {
  class Main {
 
     public static void main(String[] args) {
-        Formula first = new Formula(5,6,2);
+        Formula first = new Formula(4,5,3);
         Converter bb = x -> new Formula2(first.a, first.b, first.c);
         Formula2 second = (Formula2) bb.conv(first);
         second.displayFormula();
